@@ -1,0 +1,281 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+body {
+  background: var(--body-bg-color);
+  padding-top: 30px;
+  font-family: "MerryWeather Sans", sans-serif;
+  margin-bottom: 100px;
+}
+
+img {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+p {
+  display: inline-block;
+}
+
+.bold {
+  font-weight: 700;
+}
+.medium {
+  font-weight: 500;
+}
+.normal {
+  font-weight: 400;
+}
+
+.grande {
+  font-size: 1.43rem;
+}
+
+.medio {
+  font-size: 1.25rem;
+}
+
+.pequeno {
+  font-size: 0.81rem;
+}
+
+.container {
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 60px;
+}
+
+.portfolio-conteudo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 40px;
+}
+
+.perfil-card {
+  background: var(--bg-cards);
+  width: 350px;
+  height: 290px;
+  border-radius: 16px;
+  align-content: center;
+  text-align: center;
+}
+
+.conteudo-perfil img {
+  margin-top: 20px;
+}
+
+.imagem-card {
+  top: 20px;
+  left: 105px;
+  border-radius: 50%;
+  border: 1px solid #00ff00;
+}
+
+.perfil-card img {
+  margin-top: -20px;
+}
+
+.nome {
+  color: var(--text-color);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.funcao {
+  color: var(--text-color);
+  font-size: 0.81rem;
+}
+
+.perfil-redes {
+  margin-top: 20px;
+  background: var(--bg-cards);
+  width: 350px;
+  height: 165px;
+  border-radius: 16px;
+}
+
+.conteudo-redes {
+  padding-top: 10px;
+  padding-left: 20px;
+  color: var(--text-color);
+}
+
+.conteudo-redes li {
+  margin-bottom: 5px;
+}
+
+.conteudo-redes img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.conteudo-redes a {
+  height: 24px;
+  color: inherit;
+}
+
+.perfil-tecnologia {
+  background: var(--bg-cards);
+  width: 350px;
+  height: 240px;
+  margin-top: 20px;
+  border-radius: 16px;
+}
+
+.perfil-tecnologia p {
+  font-size: 1.25rem;
+  color: var(--text-color);
+}
+
+.conteudo-tecnologia {
+  padding: 20px;
+}
+
+.conteudo-tecnologia ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.conteudo-tecnologia li {
+  padding: 10px;
+  border-radius: 16px;
+  width: 150px;
+  background: var(--bg-techs);
+  text-align: center;
+  font-size: 10px;
+}
+
+.projeto-card {
+  background: var(--bg-cards);
+  width: 1000px;
+  height: 90px;
+  border-radius: 16px;
+  gap: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  color: var(--text-color);
+}
+
+.flex-projeto {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.arquivo-card {
+  background: var(--bg-cards);
+  width: 450px;
+  height: 175px;
+  padding: 12px 10px;
+  border-radius: 16px;
+  color: var(--text-color);
+}
+
+.nome-projeto {
+  padding: 20px 0px 20px 40px;
+  font-size: 1.25rem;
+  margin-left: 10px;
+  position: relative;
+}
+
+.nome-projeto a {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.nome-projeto::before {
+  content: "";
+  display: inline-block;
+  background-image: url("assets/folder.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+}
+
+.descricao-projeto {
+  margin-left: 20px;
+  font-size: 2ch;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.info {
+  display: flex;
+  gap: 40px;
+}
+
+.icon-estrela {
+  content: "";
+  display: inline-block;
+  background-image: url("assets/star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 30px;
+}
+
+.icon-fork {
+  content: "";
+  display: inline-block;
+  background-image: url("assets/git-branch.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 105px;
+}
+
+.tecnologia {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tecno-dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(cyan 50%, orange 50%);
+  border-radius: 50%;
+  border-color: var(--text-color);
+  border: 4px;
+}
