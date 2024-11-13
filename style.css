@@ -132,6 +132,11 @@ p {
   color: inherit;
 }
 
+.perfil {
+  justify-content: center;
+  align-content: center;
+}
+
 .perfil-tecnologia {
   background: var(--bg-cards);
   width: 350px;
@@ -288,5 +293,11 @@ p {
   }
   .portfolio-conteudo {
     grid-template-columns: 1fr;
+  }
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
