@@ -57,18 +57,19 @@ p {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   box-sizing: border-box;
-  margin: 0 60px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .portfolio-conteudo {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-columns: 1fr 2fr;
   gap: 40px;
 }
 
-.perfil-card {
+.perfil .perfil-card {
   background: var(--bg-cards);
   width: 350px;
   height: 290px;
@@ -200,6 +201,7 @@ p {
   padding: 20px 0px 20px 40px;
   font-size: 1.25rem;
   margin-left: 10px;
+  margin-right: 10px;
   position: relative;
 }
 
@@ -278,4 +280,13 @@ p {
   border-radius: 50%;
   border-color: var(--text-color);
   border: 4px;
+}
+
+@media (max-width: 930px) {
+  .container {
+    padding: 20px 20px 20px 20px;
+  }
+  .portfolio-conteudo {
+    grid-template-columns: 1fr;
+  }
 }
